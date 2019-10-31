@@ -1,0 +1,37 @@
+.cp_content_01 header {
+	position: fixed;	/*固定*/
+	width: 100%;		/*幅いっぱい*/
+	top: -22;			/*縦位置の調整*/
+	z-index: 100;		/*最前面*/
+}
+.cp_content_01 h2 {
+	padding: 0.5em;					/*文字周りの余白*/
+	color: #494949;					/*文字色*/
+	background: #CCFF99;			/*背景色*/
+	border-left: solid 5px #66FF33;	/*左線（実線 太さ 色）*/
+}
+.cp_content_01 h3 {
+	position: relative;	/*スクロール*/
+	padding-left: 25px;	/*装飾分の位置調整*/
+	z-index: 50;		/**/
+}
+
+.cp_content_01 h3:before {
+	position: absolute;								/**/
+	content: '';									/**/
+	bottom: -3px;									/**/
+	left: 0;										/**/
+	width: 0;										/**/
+	height: 0;										/**/
+	border: none;									/**/
+	border-left: solid 15px transparent;			/**/
+	border-bottom: solid 15px rgb(119, 195, 223);	/**/
+}
+.cp_content_01 h3:after {
+	position: absolute;								/**/
+	content: '';									/**/
+	bottom: -3px;									/**/
+	left: 10px;										/**/
+	width: 100%;									/**/
+	border-bottom: solid 3px rgb(119, 195, 223);	/**/
+}

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.kdc.pocketmanual"
+        version   = "1.0.0">
+
+    <name>ポケットマニュアル</name>
+
+    <description>
+        KDC本社向けポケットマニュアル(地震)アプリ
+    </description>
+
+    <author href="https://www.kyoceradocumentsolutions.co.jp/" email="hiroshi.kasakawa@dc.kyocera.com">
+        KDC本社安全防災課
+    </author>
+
+    <!-- Define the main entry-point to the application -->
+    <content src="index.html" />
+
+    <!-- Plugins -->
+    <!-- Core plugins -->
+    <plugin name="cordova-plugin-whitelist"           source="npm" spec="~1.2.1" />
+
+    <!-- Define app icon and splashscreen for each platform. -->
+    <platform name="android">
+        <icon   src="res/icon/a-icon-ldpi_36x36.png"		density="ldpi" />
+        <icon   src="res/icon/a-icon-mdpi_48x48.png"		density="mdpi" />
+        <icon   src="res/icon/a-icon-hdpi_72x72.png"		density="hdpi" />
+        <icon   src="res/icon/a-icon-xhdpi_96x96.png"		density="xhdpi" />
+        <icon   src="res/icon/a-icon-xxhdpi_144x144.png"	density="xxhdpi" />
+        <icon   src="res/icon/a-icon-xxxhdpi_192x192.png"	density="xxxhdpi" />
+    </platform>
+
+    <platform name="ios">
+        <!-- iPhoneアプリアイコン@2x -->
+        <icon   src="res/icon/Icon-60@2x.png"  platform="ios" width="120"   height="120" />
+        <!-- iPhoneアプリアイコン@3x -->
+        <icon   src="res/icon/Icon-60@3x.png"  platform="ios" width="180"   height="180" />
+        <!-- iPadアプリアイコン -->
+        <icon   src="res/icon/Icon-76.png"  platform="ios" width="76"   height="76" />
+        <!-- iPadアプリアイコン@2x -->
+        <icon   src="res/icon/Icon-76@2x.png"  platform="ios" width="152"   height="152" />
+        <!-- iPad Proアプリアイコン@2x -->
+        <icon   src="res/icon/Icon-83.5@2x.png"  platform="ios" width="167"   height="167" />
+        <!-- iPad設定アイコン -->
+        <icon   src="res/icon/Icon-Small.png"  platform="ios" width="29"   height="29" />
+        <!-- iPhone&iPad設定アイコン@2x -->
+        <icon   src="res/icon/Icon-Small@2x.png"  platform="ios" width="58"   height="58" />
+        <!-- iPhone設定アイコン@3x -->
+        <icon   src="res/icon/Icon-Small@3x.png"  platform="ios" width="87"   height="87" />
+        <!-- iPadスポットライトアイコン -->
+        <icon   src="res/icon/Icon-Small-40.png"  platform="ios" width="40"   height="40" />
+        <!-- iPhone&iPadスポットライトアイコン@2x -->
+        <icon   src="res/icon/Icon-Small-40@2x.png"  platform="ios" width="80"   height="80" />
+        <!-- iPhoneスポットライトアイコン@3x -->
+        <icon   src="res/icon/Icon-Small-40@3x.png"  platform="ios" width="120"   height="120" />
+        <!-- iPadAppStoreアイコン -->
+        <icon   src="res/icon/iTunesArtwork"  platform="ios" width="512"   height="512" />
+        <!-- iPadAppStoreアイコン@2x -->
+        <icon   src="res/icon/iTunesArtwork@2x"  platform="ios" width="1024"   height="1024" />
+        <!-- iPhone通知アイコン (iOS 10以降) -->
+        <icon   src="res/icon/iPhone-20@2x.png"  platform="ios" width="40"   height="40" />
+        <!-- iPhone通知アイコン (iOS 10以降) -->
+        <icon   src="res/icon/iPhone-20@3x.png"  platform="ios" width="60"   height="60" />
+        <!-- iPad通知アイコン (iOS 10以降) -->
+        <icon   src="res/icon/iPad-20@1x.png"  platform="ios" width="20"   height="20" />
+        <!-- iPad通知アイコン (iOS 10以降) -->
+        <icon   src="res/icon/iPad-20@2x.png"  platform="ios" width="40"   height="40" />
+        <!-- iPhone&iPadアプリストアアイコン (iOS 11以降) -->
+        <icon   src="res/icon/Icon-1024.png"  platform="ios" width="1024"   height="1024" />
+    </platform>
+
+    <!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->
+    <!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
+
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    
+    <access origin="http://*" launch-external="yes" />
+	<access origin="https://*" launch-external="yes" />
+	<access origin="tel:*" launch-external="yes" />
+	<access origin="mailto:*" launch-external="yes" />
+
+</widget>
