@@ -35,6 +35,6 @@
 	width: 100%;									/**/
 	border-bottom: solid 3px rgb(119, 195, 223);	/**/
 }
-.cp_content_01 p pre {
+.cp_content_01 pre {
 	white-space: pre-wrap ;
 }
